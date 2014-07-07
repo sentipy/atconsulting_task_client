@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="persistenceUnit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:jboss/ds/atct1</jta-data-source>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
